@@ -1,0 +1,65 @@
+{
+  "name": "@beyro/pi-mode-presets",
+  "version": "0.1.0",
+  "description": "Pi extension for named presets that set model, thinking level, tools, and system-prompt instructions.",
+  "keywords": ["pi-package", "pi", "pi-extension", "preset"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beyro/pi-mode-presets.git"
+  },
+  "homepage": "https://github.com/beyro/pi-mode-presets#readme",
+  "bugs": "https://github.com/beyro/pi-mode-presets/issues",
+  "files": ["src"],
+  "type": "module",
+  "exports": {
+    ".": "./src/extension.ts"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish"
+  },
+  "dependencies": {
+    "jsonc-parser": "3.3.1",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.31.0",
+    "@earendil-works/pi-ai": "0.83.0",
+    "@earendil-works/pi-coding-agent": "0.83.0",
+    "@earendil-works/pi-tui": "0.83.0",
+    "@types/node": "25.6.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.5"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-ai": {
+      "optional": true
+    },
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    },
+    "@earendil-works/pi-tui": {
+      "optional": true
+    }
+  },
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "packageManager": "pnpm@12.4.2"
+}
