@@ -18,7 +18,7 @@ Licensed under MIT.
 ## Install with pi
 
 ```bash
-pi install npm:@beyro/pi-mode-presets
+pi install npm:pi-mode-presets
 ```
 
 or from git

@@ -1,5 +1,5 @@
 {
-  "name": "@beyro/pi-mode-presets",
+  "name": "pi-mode-presets",
   "version": "0.1.0",
   "description": "Pi extension for named presets that set model, thinking level, tools, and system-prompt instructions.",
   "keywords": ["pi-package", "pi", "pi-extension", "preset"],
@@ -14,9 +14,6 @@
   "type": "module",
   "exports": {
     ".": "./src/extension.ts"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "scripts": {
     "test": "vitest run",
